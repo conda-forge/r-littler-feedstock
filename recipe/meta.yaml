@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/littler_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/littler/littler_{{ version }}.tar.gz
-  sha256: bb93df8ed1fbe7af5cda42696b95dd58f8ca2e594bf56bccb7030ccd394fe9ba
+  sha256: df776815697a2f1a7139993ef8fcf0959dfe05b46aa215162c03c9c7224006d0
 
 build:
   merge_build_host: True  # [win]
