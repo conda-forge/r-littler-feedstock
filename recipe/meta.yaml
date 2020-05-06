@@ -48,7 +48,7 @@ test:
 
 about:
   home: http://dirk.eddelbuettel.com/code/littler.html
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: A scripting and command-line front-end is provided by 'r' (aka 'littler') as a lightweight
     binary wrapper around the GNU R language and environment for statistical computing
     and graphics. While R can be used in batch mode, the r binary adds full support
