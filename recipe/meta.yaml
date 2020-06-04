@@ -37,8 +37,10 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
+    - pcre2
   run:
     - r-base
+    - pcre2
     - {{ native }}gcc-libs         # [win]
 
 test:
