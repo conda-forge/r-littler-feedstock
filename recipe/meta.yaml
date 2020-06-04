@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/littler_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/littler/littler_{{ version }}.tar.gz
-  sha256: bb93df8ed1fbe7af5cda42696b95dd58f8ca2e594bf56bccb7030ccd394fe9ba
+  sha256: df776815697a2f1a7139993ef8fcf0959dfe05b46aa215162c03c9c7224006d0
 
 build:
   merge_build_host: True  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -25,21 +25,23 @@ requirements:
   build:
     - {{ compiler('c') }}              # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
-    - {{posix}}filesystem        # [win]
-    - {{posix}}sed               # [win]
-    - {{posix}}grep              # [win]
-    - {{posix}}autoconf
-    - {{posix}}automake          # [not win]
-    - {{posix}}automake-wrapper  # [win]
-    - {{posix}}pkg-config
-    - {{posix}}make
-    - {{posix}}coreutils         # [win]
-    - {{posix}}zip               # [win]
+    - {{ posix }}filesystem        # [win]
+    - {{ posix }}sed               # [win]
+    - {{ posix }}grep              # [win]
+    - {{ posix }}autoconf
+    - {{ posix }}automake          # [not win]
+    - {{ posix }}automake-wrapper  # [win]
+    - {{ posix }}pkg-config
+    - {{ posix }}make
+    - {{ posix }}coreutils         # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
+    - pcre2
   run:
     - r-base
-    - {{native}}gcc-libs         # [win]
+    - pcre2
+    - {{ native }}gcc-libs         # [win]
 
 test:
   commands:
@@ -48,7 +50,7 @@ test:
 
 about:
   home: http://dirk.eddelbuettel.com/code/littler.html
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: A scripting and command-line front-end is provided by 'r' (aka 'littler') as a lightweight
     binary wrapper around the GNU R language and environment for statistical computing
     and graphics. While R can be used in batch mode, the r binary adds full support
