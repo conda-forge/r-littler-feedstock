@@ -3,7 +3,7 @@ About r-littler
 
 Home: http://dirk.eddelbuettel.com/code/littler.html
 
-Package license: GPL (>= 2)
+Package license: GPL-2.0-or-later
 
 Feedstock license: BSD 3-Clause
 
