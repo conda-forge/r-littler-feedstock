@@ -1,4 +1,4 @@
-{% set version = "0.3.12" %}
+{% set version = "0.3.13" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,16 +10,15 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/littler_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/littler/littler_{{ version }}.tar.gz
-  sha256: 513983e5217b171c98af734d6cd525305014796537e87a36b329f2335dbfd7ef
+  sha256: f03f99bcd94f7d7148c16528bdd5cffa9c65360ce1c4f5ba9b818f54f97f4469
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
+  skip: True  # [not unix]
   rpaths:
     - lib/R/lib/
     - lib/
-  # Unix-only package
-  skip: true  # [win]
 
 requirements:
   build:
@@ -37,10 +36,8 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - pcre2
   run:
     - r-base
-    - pcre2
     - {{ native }}gcc-libs         # [win]
 
 test:
@@ -49,7 +46,7 @@ test:
     - "\"%R%\" -e \"library('littler')\""  # [win]
 
 about:
-  home: http://dirk.eddelbuettel.com/code/littler.html
+  home: https://github.com/eddelbuettel/littler, https://dirk.eddelbuettel.com/code/littler.html
   license: GPL-2.0-or-later
   summary: A scripting and command-line front-end is provided by 'r' (aka 'littler') as a lightweight binary wrapper around the GNU R language and environment for statistical computing and graphics. While R can be used in batch mode, the r binary adds full support for both 'shebang'-style scripting (i.e. using a  hash-mark-exclamation-path
     expression as the first line in scripts) as well as command-line use in standard Unix pipelines. In other words, r provides the R language without the environment.
@@ -63,20 +60,20 @@ extra:
 # Package: littler
 # Type: Package
 # Title: R at the Command-Line via 'r'
-# Version: 0.3.8
-# Date: 2019-06-09
+# Version: 0.3.13
+# Date: 2021-07-24
 # Author: Dirk Eddelbuettel and Jeff Horner
 # Maintainer: Dirk Eddelbuettel <edd@debian.org>
 # Description: A scripting and command-line front-end is provided by 'r' (aka 'littler') as a lightweight binary wrapper around the GNU R language and environment for statistical computing and graphics. While R can be used in batch mode, the r binary adds full support for both 'shebang'-style scripting (i.e. using a  hash-mark-exclamation-path expression as the first line in scripts) as well as command-line use in standard Unix pipelines. In other words, r provides the R language without the environment.
-# URL: http://dirk.eddelbuettel.com/code/littler.html
+# URL: https://github.com/eddelbuettel/littler, https://dirk.eddelbuettel.com/code/littler.html
 # BugReports: https://github.com/eddelbuettel/littler/issues
 # License: GPL (>= 2)
 # OS_type: unix
 # SystemRequirements: libR
-# Suggests: knitr, docopt, rcmdcheck
+# Suggests: knitr, rmarkdown, minidown, docopt, rcmdcheck, foghorn
 # VignetteBuilder: knitr
 # RoxygenNote: 5.0.1
 # NeedsCompilation: yes
-# Packaged: 2019-06-09 16:19:34.73023 UTC; edd
+# Packaged: 2021-07-24 13:46:57 UTC; edd
 # Repository: CRAN
-# Date/Publication: 2019-06-09 16:30:03 UTC
+# Date/Publication: 2021-07-24 14:50:06 UTC
