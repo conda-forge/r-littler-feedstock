@@ -1,7 +1,7 @@
 About r-littler
 ===============
 
-Home: http://dirk.eddelbuettel.com/code/littler.html
+Home: https://github.com/eddelbuettel/littler, https://dirk.eddelbuettel.com/code/littler.html
 
 Package license: GPL-2.0-or-later
 
