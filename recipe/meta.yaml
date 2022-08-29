@@ -1,4 +1,4 @@
-{% set version = "0.3.15" %}
+{% set version = "0.3.16" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/littler_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/littler/littler_{{ version }}.tar.gz
-  sha256: 89e80f59394db434fdb37578e3d86e8daae828991bf148763ecff5edcb1e2f91
+  sha256: 655a9065c3667394ea0a79a61e7446cc345dd3af9856f3e658fb14a53c9b0661
 
 build:
   merge_build_host: true  # [win]
