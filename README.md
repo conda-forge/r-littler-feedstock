@@ -1,11 +1,22 @@
+About r-littler-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-littler-feedstock/blob/main/LICENSE.txt)
+
 About r-littler
-===============
+---------------
 
 Home: https://github.com/eddelbuettel/littler, https://dirk.eddelbuettel.com/code/littler.html
 
 Package license: GPL-2.0-or-later
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-littler-feedstock/blob/main/LICENSE.txt)
+Summary: A scripting and command-line front-end is provided by 'r' (aka 'littler') as a lightweight binary wrapper around the GNU R language and environment for statistical computing and graphics. While R can be used in batch mode, the r binary adds full support for both 'shebang'-style scripting (i.e. using a  hash-mark-exclamation-path expression as the first line in scripts) as well as command-line use in standard Unix pipelines. In other words, r provides the R language without the environment.
+About r-littler
+---------------
+
+Home: https://github.com/eddelbuettel/littler, https://dirk.eddelbuettel.com/code/littler.html
+
+Package license: GPL-2.0-or-later
 
 Summary: A scripting and command-line front-end is provided by 'r' (aka 'littler') as a lightweight binary wrapper around the GNU R language and environment for statistical computing and graphics. While R can be used in batch mode, the r binary adds full support for both 'shebang'-style scripting (i.e. using a  hash-mark-exclamation-path expression as the first line in scripts) as well as command-line use in standard Unix pipelines. In other words, r provides the R language without the environment.
 
@@ -30,28 +41,28 @@ Current build status
               <td>linux_64_r_base4.1</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7864&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-littler-feedstock?branchName=main&jobName=linux&configuration=linux_64_r_base4.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-littler-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.1" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_r_base4.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7864&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-littler-feedstock?branchName=main&jobName=linux&configuration=linux_64_r_base4.2" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-littler-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.2" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_r_base4.1</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7864&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-littler-feedstock?branchName=main&jobName=osx&configuration=osx_64_r_base4.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-littler-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.1" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_r_base4.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7864&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-littler-feedstock?branchName=main&jobName=osx&configuration=osx_64_r_base4.2" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-littler-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.2" alt="variant">
                 </a>
               </td>
             </tr>
