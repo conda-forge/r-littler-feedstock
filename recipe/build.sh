@@ -4,5 +4,5 @@ ${R} CMD INSTALL --build . ${R_ARGS}
 
 ## expose bin
 pushd ${PREFIX}/bin
-ln -s ../library/R/littler/bin/r r
+ln -sf ../lib/R/library/littler/bin/r r
 popd
