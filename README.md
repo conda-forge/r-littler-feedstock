@@ -3,22 +3,28 @@ About r-littler-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-littler-feedstock/blob/main/LICENSE.txt)
 
+
 About r-littler
 ---------------
 
-Home: https://github.com/eddelbuettel/littler, https://dirk.eddelbuettel.com/code/littler.html
+Home: https://dirk.eddelbuettel.com/code/littler.html
 
 Package license: GPL-2.0-or-later
 
 Summary: A scripting and command-line front-end is provided by 'r' (aka 'littler') as a lightweight binary wrapper around the GNU R language and environment for statistical computing and graphics. While R can be used in batch mode, the r binary adds full support for both 'shebang'-style scripting (i.e. using a  hash-mark-exclamation-path expression as the first line in scripts) as well as command-line use in standard Unix pipelines. In other words, r provides the R language without the environment.
+
+Development: https://github.com/eddelbuettel/littler
+
 About r-littler
 ---------------
 
-Home: https://github.com/eddelbuettel/littler, https://dirk.eddelbuettel.com/code/littler.html
+Home: https://dirk.eddelbuettel.com/code/littler.html
 
 Package license: GPL-2.0-or-later
 
 Summary: A scripting and command-line front-end is provided by 'r' (aka 'littler') as a lightweight binary wrapper around the GNU R language and environment for statistical computing and graphics. While R can be used in batch mode, the r binary adds full support for both 'shebang'-style scripting (i.e. using a  hash-mark-exclamation-path expression as the first line in scripts) as well as command-line use in standard Unix pipelines. In other words, r provides the R language without the environment.
+
+Development: https://github.com/eddelbuettel/littler
 
 Current build status
 ====================
