@@ -43,7 +43,8 @@ requirements:
 test:
   commands:
     - $R -e "library('littler')"           # [not win]
-    - r --version                          # [not win]
+    - r --version                          # [linux]
+    - lr --version                          # [osx]
     - "\"%R%\" -e \"library('littler')\""  # [win]
 
 about:
