@@ -4,5 +4,9 @@ ${R} CMD INSTALL --build . ${R_ARGS}
 
 ## expose bin
 pushd ${PREFIX}/bin
-ln -sf ../lib/R/library/littler/bin/r r
+if [[ $target_platform =~ .*osx.* ]]; then
+  ln -sf ../lib/R/library/littler/bin/r lr
+else
+  ln -sf ../lib/R/library/littler/bin/r r
+fi
 popd
