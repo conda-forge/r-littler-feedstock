@@ -36,6 +36,7 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
+    - zlib
   run:
     - r-base
 
@@ -43,7 +44,7 @@ test:
   commands:
     - $R -e "library('littler')"           # [not win]
     - r --version                          # [linux]
-    - lr --version                          # [osx]
+    - lr --version                         # [osx]
     - "\"%R%\" -e \"library('littler')\""  # [win]
 
 about:
