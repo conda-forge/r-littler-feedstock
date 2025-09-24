@@ -35,7 +35,9 @@ requirements:
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
   host:
+    - liblzma-devel                # [linux]
     - r-base
+    - zlib                         # [linux]
   run:
     - r-base
 
