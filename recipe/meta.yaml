@@ -1,4 +1,4 @@
-{% set version = "0.3.21" %}
+{% set version = "0.3.22" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/littler_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/littler/littler_{{ version }}.tar.gz
-  sha256: 9e8be7aca97ef31ecc7af845954caddf52f9dad4d28ee1392dca829b75e64085
+  sha256: 20ed040261260279919e23597f48962d5a5dc50ebbee5c956f79f32bf9927ff1
 
 build:
   number: 0
@@ -52,8 +52,8 @@ about:
   home: https://dirk.eddelbuettel.com/code/littler.html
   dev_url: https://github.com/eddelbuettel/littler
   license: GPL-2.0-or-later
-  summary: A scripting and command-line front-end is provided by 'r' (aka 'littler') as a lightweight binary wrapper around the GNU R language and environment for statistical computing and graphics. While R can be used in batch mode, the r binary adds full support for both 'shebang'-style scripting (i.e. using a  hash-mark-exclamation-path
-    expression as the first line in scripts) as well as command-line use in standard Unix pipelines. In other words, r provides the R language without the environment.
+  summary: A scripting and command-line front-end is provided by 'r' (aka 'littler') as a lightweight binary wrapper around the GNU R language and environment for statistical computing and graphics. While R can be used in batch mode, the r binary adds full support for both 'shebang'-style scripting (i.e. using a  
+    hash-mark-exclamation-path expression as the first line in scripts) as well as command-line use in standard Unix pipelines. In other words, r provides the R language without the environment.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
