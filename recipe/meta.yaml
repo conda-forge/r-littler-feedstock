@@ -1,4 +1,4 @@
-{% set version = "0.3.23" %}
+{% set version = "0.3.24" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/littler_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/littler/littler_{{ version }}.tar.gz
-  sha256: c7d47e41589123d559e54d11999902bb86c5799e12777586638b99b54526110c
+  sha256: 73d367b1d030c5c47b5aca63eec40a8dafb84e3e10c669d93c70ef2d6994d83d
 
 build:
   number: 0
